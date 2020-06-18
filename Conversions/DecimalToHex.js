@@ -16,7 +16,7 @@ function decimalToHex (num) {
     hexOut.unshift(intToHex(num % 16))
     num = Math.floor(num / 16)
   }
-  return intToHex(num) + hexOut.join('')./
+  return intToHex(num) + hexOut.join('')
 }
 
 // test cases
