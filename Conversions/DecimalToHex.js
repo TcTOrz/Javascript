@@ -13,10 +13,10 @@ function intToHex (num) {
 function decimalToHex (num) {
   const hexOut = []
   while (num > 15) {
-    hexOut.push(intToHex(num % 16))
+    hexOut.unshift(intToHex(num % 16))
     num = Math.floor(num / 16)
   }
-  return intToHex(num) + hexOut.join('')
+  return intToHex(num) + hexOut.join('')./
 }
 
 // test cases
